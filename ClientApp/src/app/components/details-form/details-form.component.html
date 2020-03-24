@@ -1,0 +1,70 @@
+<div class="testbox">
+    <form action="/">
+        <h1>Complaint Form</h1>
+        <p>Please send us details about the incident you would like to report. Our Complaint Center will analyze
+            your complaint and take the appropriate measures in order that the reported situation will not occur at
+            any other time in the future.</p>
+        <hr />
+        <div class="item">
+            <p>Date of complaint</p>
+            <input id="date-of-complaint" type="date" name="name" required />
+            <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="item">
+            <p>Name</p>
+            <input id="first-name" type="text" name="name" placeholder="First" />
+            <input id="last-name" type="text" name="name" placeholder="Last" />
+        </div>
+        <div class="item">
+            <p>Email</p>
+            <input id="email" type="text" name="name" />
+        </div>
+        <div class="item address">
+            <p>Address</p>
+            <div class="street">
+                <input id="street" class="street-item" type="text" name="name" placeholder="Street address" />
+                <input id="street1" class="street-item" type="text" name="name" placeholder="Street addres line 2" />
+                <input id="city" type="text" name="name" placeholder="City" />
+                <input id="region" type="text" name="name" placeholder="Region" />
+                <input id="zip-code" type="text" name="name" placeholder="Postal / zip code" />
+                <select>
+                    <option value="">Country</option>
+                    <option value="1">Russia</option>
+                    <option value="2">Germany</option>
+                    <option value="3">France</option>
+                    <option value="4">Armenia</option>
+                    <option value="5">USA</option>
+                </select>
+            </div>
+        </div>
+        <div class="item">
+            <p>Date of the reported incident</p>
+            <input id="date-of-incident" type="date" name="name" required />
+            <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="item location">
+            <p>Incident location</p>
+            <input id="incident-location" type="text" name="name" />
+        </div>
+        <div class="item complaint-details">
+            <p>Complaint details</p>
+            <div class="complaint-details-item">
+                <textarea id="complaint-details" rows="5"></textarea>
+            </div>
+        </div>
+        <div class="item desired-outcome">
+            <p>Desired outcome</p>
+            <div class="desired-outcome-item">
+                <textarea id="desired-outcome" rows="5"></textarea>
+                <small>By signing you declare that all information you have entered is truthful and
+                    accurate.</small>
+            </div>
+        </div>
+        <h4>Your signature</h4>
+        <textarea id="signature" rows="5"></textarea>
+        <small>By signing you declare that all information you have entered is truthful and accurate.</small>
+        <div class="btn-block">
+            <button type="submit" href="/">Send</button>
+        </div>
+    </form>
+</div>
